@@ -1,103 +1,79 @@
-import Image from "next/image";
+import PortfolioSection from "../components/PortfolioSection";
+import HowItWorksSection from "../components/HowItWorksSection";
+import ContactSection from "../components/ContactSection";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="flex flex-col min-h-screen bg-white text-black">
+      <Navbar />
+      {/* Hero Section */}
+      <section id="hero" className="h-screen w-full flex flex-col justify-center items-center px-4 text-center pt-20">
+      <h1 className="text-4xl sm:text-6xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">Fast, hassle free software solutions</h1>
+      <a href="#contact" className="inline-block px-8 py-3 rounded-md text-white bg-emerald-500 hover:bg-emerald-600 font-semibold transition">Start Your Project</a>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* About / Services Section */}
+      <section className="w-full max-w-3xl mx-auto py-12 px-4" id="about-us">
+        <h2 className="text-2xl font-bold mb-4 text-center">About Us</h2>
+        <p className="mb-6 text-center text-gray-700">
+          Based in Weslaco, Texas, we are a husband-and-wife duo passionate about helping local businesses of all kinds—law firms, photographers, musicians, and more—grow and thrive online. With a commitment to quality, we combine expert programming and thoughtful design to deliver modern, effective solutions tailored to your needs. We genuinely want to see you and your business succeed, and we&apos;re here to support your journey every step of the way.
+        </p>
+      </section>
+
+      <section className="w-full max-w-3xl mx-auto py-16 px-4" id="about">
+        <h2 className="text-2xl font-bold mb-4 text-center">What We Do</h2>
+        <p className="mb-8 text-center text-gray-700">We build software of all kinds for clients—landing pages, custom web apps, and more. Whether you need a simple site or a complex solution, we deliver results quickly and efficiently.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="rounded-lg border p-6 flex flex-col items-center">
+            <span className="text-emerald-500 text-3xl mb-2">🌐</span>
+            <h3 className="font-semibold mb-1">Landing Pages</h3>
+            <p className="text-sm text-gray-600 text-center">High-converting, beautiful landing pages for any purpose.</p>
+          </div>
+          <div className="rounded-lg border p-6 flex flex-col items-center">
+            <span className="text-emerald-500 text-3xl mb-2">🛠️</span>
+            <h3 className="font-semibold mb-1">Web Apps</h3>
+            <p className="text-sm text-gray-600 text-center">From MVPs to full-featured apps, built to your needs.</p>
+          </div>
+          <div className="rounded-lg border p-6 flex flex-col items-center">
+            <span className="text-emerald-500 text-3xl mb-2">📱</span>
+            <h3 className="font-semibold mb-1">Mobile Apps</h3>
+            <p className="text-sm text-gray-600 text-center">Native and cross-platform mobile apps for iOS and Android devices.</p>
+          </div>
+          <div className="rounded-lg border p-6 flex flex-col items-center">
+            <span className="text-emerald-500 text-3xl mb-2">💡</span>
+            <h3 className="font-semibold mb-1">Other Software</h3>
+            <p className="text-sm text-gray-600 text-center">General software, automation, and custom tools.</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* <section className="w-full max-w-3xl mx-auto py-12 px-4" id="pricing">
+        <h2 className="text-2xl font-bold mb-4 text-center">Pricing</h2>
+        <div className="bg-white rounded-lg shadow p-6 flex flex-col gap-6">
+          <div className="text-center">
+            <h3 className="text-xl font-semibold mb-2">Landing Page</h3>
+            <p className="text-emerald-600 text-3xl font-bold mb-1">
+              $100 <span className="text-lg font-normal">one-time</span> <span className="mx-2">|</span> <span className="text-emerald-600 text-2xl font-bold">$5</span><span className="text-lg font-normal">/month</span>
+            </p>
+            <p className="text-gray-700 mb-2">A beautiful, custom landing page tailored to your business.</p>
+            <p className="text-gray-500 text-sm">
+              <span className="font-medium">$5/month</span> (required) — covers domain costs, ongoing updates, backups, and support.
+            </p>
+          </div>
+          <div className="border-t pt-6 text-center">
+            <h3 className="text-xl font-semibold mb-2">Custom Projects</h3>
+            <p className="text-gray-700 mb-2">
+              Need something more? We build web apps, portfolios, and custom solutions for all kinds of businesses. Pricing varies based on scope and requirements.
+            </p>
+            <p className="text-gray-500 text-sm">Contact us for a free, personalized quote!</p>
+          </div>
+        </div>
+      </section> */}
+
+      <PortfolioSection />
+      <HowItWorksSection />
+      <ContactSection />
     </div>
   );
 }
