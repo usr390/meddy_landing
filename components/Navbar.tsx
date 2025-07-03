@@ -36,13 +36,13 @@ export default function Navbar() {
               onClick={() => scrollToSection('about-us')}
               className="text-gray-700 hover:text-emerald-600 transition-colors"
             >
-              About
+              About Us
             </button>
             <button
               onClick={() => scrollToSection('about')}
               className="text-gray-700 hover:text-emerald-600 transition-colors"
             >
-              Services
+              What We Do
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}

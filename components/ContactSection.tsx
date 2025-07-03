@@ -52,8 +52,20 @@ export default function ContactSection() {
             name="message"
             required
             className="w-full border rounded px-3 py-2 h-28 resize-vertical focus:outline-none focus:ring-2 focus:ring-emerald-400 border-gray-300"
+            placeholder="Please describe your proposed project. What do you need? What are your goals? What are your pain points?"
           />
           <ValidationError prefix="Message" field="message" errors={state.errors} />
+        </div>
+        <div>
+          <label htmlFor="socials" className="block font-medium mb-1">
+            Social Media Links <span className="text-gray-400 text-xs">(optional, one per line)</span>
+          </label>
+          <textarea
+            id="socials"
+            name="socials"
+            className="w-full border rounded px-3 py-2 h-20 resize-vertical focus:outline-none focus:ring-2 focus:ring-emerald-400 border-gray-300"
+            placeholder="Paste links to your Facebook, Instagram, etc."
+          />
         </div>
         <button
           type="submit"

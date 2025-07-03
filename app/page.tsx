@@ -1,52 +1,71 @@
+'use client';
+
 import PortfolioSection from "../components/PortfolioSection";
+import WhyChooseSection from "../components/WhyChooseSection";
 import HowItWorksSection from "../components/HowItWorksSection";
 import ContactSection from "../components/ContactSection";
 import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import { Globe, Smartphone, Lightbulb, Laptop, Laptop2 } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-black">
       <Navbar />
-      {/* Hero Section */}
-      <section id="hero" className="h-screen w-full flex flex-col justify-center items-center px-4 text-center pt-20">
-      <h1 className="text-4xl sm:text-6xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">Fast, hassle free software solutions</h1>
-      <a href="#contact" className="inline-block px-8 py-3 rounded-md text-white bg-emerald-500 hover:bg-emerald-600 font-semibold transition">Start Your Project</a>
-      </section>
+      <HeroSection />
 
       {/* About / Services Section */}
       <section className="w-full max-w-3xl mx-auto py-12 px-4" id="about-us">
         <h2 className="text-2xl font-bold mb-4 text-center">About Us</h2>
         <p className="mb-6 text-center text-gray-700">
-          Based in Weslaco, Texas, we are a husband-and-wife duo passionate about helping local businesses of all kinds—law firms, photographers, musicians, and more—grow and thrive online. With a commitment to quality, we combine expert programming and thoughtful design to deliver modern, effective solutions tailored to your needs. We genuinely want to see you and your business succeed, and we&apos;re here to support your journey every step of the way.
+          Based in Weslaco, Texas, we are a husband-and-wife duo passionate about helping local businesses of all kinds—law firms, 
+          photographers, musicians, and more—grow and thrive online. With a commitment to quality, we combine expert programming and 
+          thoughtful design to deliver modern, effective solutions tailored to your needs. We want to see you and your business 
+          succeed, and we&apos;re here to support your journey by creating software that makes running your day-to-day much easier.
+        </p>
+      </section>
+
+      {/* Our Philosophy Section */}
+      <section className="w-full max-w-3xl mx-auto py-12 px-4" id="philosophy">
+        <h2 className="text-2xl font-bold mb-4 text-center">What We Believe</h2>
+        <p className="mb-6 text-center text-gray-700">
+          We believe the new era of AI has made custom software more affordable than ever before. Local businesses can now leverage technology that was once reserved for big corporations. We also believe software doesn&apos;t have to be complex to be transformative for your business: sometimes, a simple custom tool or workflow can save hours, reduce stress, and unlock new opportunities. Our goal is to deliver practical, intuitive solutions that empower you to do more with less, so you can focus on what matters most—growing your business and serving your community.
         </p>
       </section>
 
       <section className="w-full max-w-3xl mx-auto py-16 px-4" id="about">
         <h2 className="text-2xl font-bold mb-4 text-center">What We Do</h2>
-        <p className="mb-8 text-center text-gray-700">We build software of all kinds for clients—landing pages, custom web apps, and more. Whether you need a simple site or a complex solution, we deliver results quickly and efficiently.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="rounded-lg border p-6 flex flex-col items-center">
-            <span className="text-emerald-500 text-3xl mb-2">🌐</span>
-            <h3 className="font-semibold mb-1">Landing Pages</h3>
-            <p className="text-sm text-gray-600 text-center">High-converting, beautiful landing pages for any purpose.</p>
+        <p className="mb-8 text-center text-gray-700">We build software of all kinds for clients—landing pages, custom web apps, mobile apps, desktop apps, and more. Whether you need a simple site or a complex solution, we deliver results quickly and efficiently.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="rounded-lg border p-6 flex flex-col items-center text-center h-full">
+            <Globe className="text-emerald-500 w-10 h-10 mb-2" />
+            <h3 className="font-semibold mb-1 text-lg sm:text-xl">Landing Pages</h3>
+            <p className="text-gray-700">High-converting, beautiful landing pages for any purpose.</p>
           </div>
-          <div className="rounded-lg border p-6 flex flex-col items-center">
-            <span className="text-emerald-500 text-3xl mb-2">🛠️</span>
-            <h3 className="font-semibold mb-1">Web Apps</h3>
-            <p className="text-sm text-gray-600 text-center">From MVPs to full-featured apps, built to your needs.</p>
+          <div className="rounded-lg border p-6 flex flex-col items-center text-center h-full">
+            <Laptop2 className="text-emerald-500 w-10 h-10 mb-2" />
+            <h3 className="font-semibold mb-1 text-lg sm:text-xl">Web Apps</h3>
+            <p className="text-gray-700">From MVPs to full-featured apps, built to your needs.</p>
           </div>
-          <div className="rounded-lg border p-6 flex flex-col items-center">
-            <span className="text-emerald-500 text-3xl mb-2">📱</span>
-            <h3 className="font-semibold mb-1">Mobile Apps</h3>
-            <p className="text-sm text-gray-600 text-center">Native and cross-platform mobile apps for iOS and Android devices.</p>
+          <div className="rounded-lg border p-6 flex flex-col items-center text-center h-full">
+            <Smartphone className="text-emerald-500 w-10 h-10 mb-2" />
+            <h3 className="font-semibold mb-1 text-lg sm:text-xl">Mobile Apps</h3>
+            <p className="text-gray-700">Native and cross-platform mobile apps for iOS and Android devices.</p>
           </div>
-          <div className="rounded-lg border p-6 flex flex-col items-center">
-            <span className="text-emerald-500 text-3xl mb-2">💡</span>
-            <h3 className="font-semibold mb-1">Other Software</h3>
-            <p className="text-sm text-gray-600 text-center">General software, automation, and custom tools.</p>
+          <div className="rounded-lg border p-6 flex flex-col items-center text-center h-full">
+            <Laptop className="text-emerald-500 w-10 h-10 mb-2" />
+            <h3 className="font-semibold mb-1 text-lg sm:text-xl">Desktop Apps</h3>
+            <p className="text-gray-700">Native apps for Mac and Windows.</p>
+          </div>
+          <div className="rounded-lg border p-6 flex flex-col items-center text-center h-full col-span-full sm:col-span-2 lg:col-span-2 mx-auto">
+            <Lightbulb className="text-emerald-500 w-10 h-10 mb-2" />
+            <h3 className="font-semibold mb-1 text-lg sm:text-xl">Other Software</h3>
+            <p className="text-gray-700">General software, automation, and custom tools.</p>
           </div>
         </div>
       </section>
+
+      <WhyChooseSection />
 
       {/* <section className="w-full max-w-3xl mx-auto py-12 px-4" id="pricing">
         <h2 className="text-2xl font-bold mb-4 text-center">Pricing</h2>
