@@ -4,6 +4,7 @@ import PortfolioSection from "../components/PortfolioSection";
 import WhyChooseSection from "../components/WhyChooseSection";
 import HowItWorksSection from "../components/HowItWorksSection";
 import ContactSection from "../components/ContactSection";
+import PricingSection from "../components/PricingSection";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import { Globe, Smartphone, Lightbulb, Laptop, Laptop2 } from "lucide-react";
@@ -89,6 +90,7 @@ export default function Home() {
 
       <PortfolioSection />
       <HowItWorksSection />
+      <PricingSection />
       <ContactSection />
     </div>
   );
