@@ -57,20 +57,22 @@ export default function PortfolioSection() {
                 height={200}
                 className="w-full h-32 object-cover rounded mb-4"
               />
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-2 text-emerald-600 hover:underline font-medium"
-              >
-                Visit Site
-              </a>
-            <a
-                href={`/portfolio/${project.slug}`}
-                className="text-emerald-600 hover:text-emerald-600 hover:underline font-medium text-right"
+              <div className="flex justify-between items-center w-full mt-2">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-600 hover:underline font-medium"
                 >
-                Read more
+                  Visit Site
                 </a>
+                <a
+                  href={`/portfolio/${project.slug}`}
+                  className="text-emerald-600 hover:text-emerald-600 hover:underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
             </CardContent>
           </Card>
         ))}
