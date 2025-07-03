@@ -8,7 +8,7 @@ export default function HeroSection() {
     >
       <div className="w-full border-6 border-gray-200 p-4 flex flex-col items-center relative">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-8 text-white leading-relaxed text-left w-full px-4 py-4 md:px-16 md:py-10 lg:px-32 lg:py-16">
-          Weslaco Custom Software Provider: Developing Tools & Apps For Businesses Across the Rio Grande Valley
+          Weslaco Software Develoer: Tools & Apps For Businesses Across the Rio Grande Valley
         </h1>
       </div>
       <a
