@@ -1,28 +1,28 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MapPin, Award, UserCheck, ShieldCheck } from "lucide-react";
+import { MapPin, UserCheck, ShieldCheck, BadgeDollarSign } from "lucide-react";
 
 const points = [
   {
     icon: MapPin,
     title: "Local Roots",
     description:
-      "We know the Valley and its businesses. Our solutions are tailored for the unique needs of our South Texas community.",
+      "We are based in the RGV and are laser-focused on equipping our community with the tools to be successful.",
   },
   {
-    icon: Award,
-    title: "Proven Software Expertise",
+    icon: BadgeDollarSign,
+    title: "Great Pricing",
     description:
-      "From simple tools to complex apps, we deliver results. Our portfolio shows a track record of successful launches.",
+      "We are committed to offering our services at affordable and reasonable price points.",
   },
   {
     icon: UserCheck,
-    title: "Client-Centric Approach",
+    title: "Face-to-Face Contact",
     description:
-      "Your project isn't just a task—it's your vision. We offer personalized attention and clear, honest communication.",
+      "Unlike most software firms, we offer to meet in-person to better understand your needs and requirements.",
   },
   {
     icon: ShieldCheck,
-    title: "No Win, No Fee Guarantee",
+    title: "Convenient Payment",
     description:
       "You pay nothing until you're 100% satisfied with your software. No risk, just results.",
   },

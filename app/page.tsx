@@ -18,10 +18,7 @@ export default function Home() {
       <section className="w-full max-w-3xl mx-auto py-12 px-4" id="about-us">
         <h2 className="text-2xl font-bold mb-4 text-center">About Us</h2>
         <p className="mb-6 text-center text-gray-700">
-          Based in Weslaco, Texas, we are a husband-and-wife duo passionate about helping local businesses of all kinds—law firms, 
-          photographers, musicians, and more—grow and thrive online. With a commitment to quality, we combine expert programming and 
-          thoughtful design to deliver modern, effective solutions tailored to your needs. We want to see you and your business 
-          succeed, and we&apos;re here to support your journey by creating software that makes running your day-to-day much easier.
+          Based in Weslaco, Texas, we are a husband-and-wife duo operating a software firm dedicated to helping local businesses grow and thrive in the technology world.
         </p>
       </section>
 
@@ -29,7 +26,7 @@ export default function Home() {
       <section className="w-full max-w-3xl mx-auto py-12 px-4" id="philosophy">
         <h2 className="text-2xl font-bold mb-4 text-center">What We Believe</h2>
         <p className="mb-6 text-center text-gray-700">
-          We believe the new era of AI has made custom software more affordable than ever before. Local businesses can now leverage technology that was once reserved for big corporations. We also believe software doesn&apos;t have to be complex to be transformative for your business: sometimes, a simple custom tool or workflow can save hours, reduce stress, and unlock new opportunities. Our goal is to deliver practical, intuitive solutions that empower you to do more with less, so you can focus on what matters most—growing your business and serving your community.
+          We believe the new era of AI has made custom software more affordable than ever before. Local businesses can now leverage technology that was once reserved for big corporations. Our goal is to deliver practical, intuitive software solutions that empower you to do more with less, so you can focus on what matters most—growing your business and serving your community.
         </p>
       </section>
 
