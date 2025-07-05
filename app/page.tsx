@@ -27,7 +27,7 @@ export default function Home() {
       <section className="w-full max-w-3xl mx-auto py-12 px-4" id="philosophy">
         <h2 className="text-2xl font-bold mb-4 text-center">What We Believe</h2>
         <p className="mb-6 text-center text-gray-700">
-          We believe the new era of AI has made custom software more affordable than ever before. Local businesses can now leverage technology that was once reserved for big corporations. Our goal is to deliver practical, intuitive software solutions that empower you to do more with less, so you can focus on what matters most—growing your business and serving your community.
+          We believe the new era of AI has made custom software more affordable than ever before. Local businesses can now leverage technology that was once reserved for big corporations. We believe in delivering practical, intuitive software solutions that empower you to do more with less, so you can focus on what matters most—growing your business and serving your community.
         </p>
       </section>
 

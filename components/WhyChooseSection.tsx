@@ -24,7 +24,7 @@ const points = [
     icon: ShieldCheck,
     title: "Convenient Payment",
     description:
-      "You pay nothing until you're 100% satisfied with your software. No risk, just results.",
+      "You pay nothing until you're 100% satisfied with your software.",
   },
 ];
 
