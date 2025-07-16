@@ -27,7 +27,7 @@ export default function PricingSection() {
     <section className="w-full max-w-4xl mx-auto py-16 px-4" id="pricing">
       <h2 className="text-2xl font-bold mb-8 text-center">Pricing</h2>
       <p className="mb-8 text-center text-gray-700 max-w-2xl mx-auto">
-        You pay nothing until you are 100% confident in our results. Prices vary slightly depending on complexity. Here's a rough estimate:
+        You pay nothing until you are 100% confident in our results. Prices vary slightly depending on complexity. Here&apos;s a rough estimate:
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {pricing.map((item, idx) => (
