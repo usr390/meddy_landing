@@ -1,88 +1,53 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-// You may want to move this to a shared file if you update your projects often
+// Updated project structure
 const projects = [
   {
-    name: "Reyna Pet Sales",
-    description: "Landing page for a pet sales business.",
-    url: "https://reynabreeders.carrd.co",
-    imageAlt: "Reyna Pet Sales screenshot",
-    image: "reynas.jpeg",
-    slug: "reyna-pet-sales",
-    caseStudy: {
-      before: "Puppies were being promoted only through text posts and DMs. There was no system to organize photos, bios, or health info. Serious inquiries were buried in cluttered social messages.",
-      after: "We created a clean, mobile-first landing page that let each puppy shine with photos, names, and personality traits. Within 2 weeks:",
-      results: [
-        "80% of puppies were reserved through the contact form",
-        "users spent an average of 3+ minutes browsing bios",
-        "site received 1,700+ visits from local search and IG bio link",
-        "Pet seller got 10x fewer 'is this still available?' messages and 4x more serious buyers"
-      ],
-      quote: "People showed up already knowing the puppy's name. I didn't have to explain anything.",
-      quoteBy: "Client"
-    }
-  },
-  {
-    name: "The Eatery",
-    description: "Landing page for a food truck park in Weslaco, TX.",
-    url: "https://theeatery.carrd.co",
-    imageAlt: "The Eatery screenshot",
-    image: "eatery.jpeg",
-    slug: "the-eatery",
-    caseStudy: {
-      before: "The Eatery had a strong Instagram following but no centralized place for people to learn about events, vendors, or get answers to basic questions like 'Who's open today?' or 'Where is this?'",
-      after: "We launched a streamlined, modern landing page with sections for vendors, events, and booking inquiries. Post-launch impact in the first 45 days:",
-      results: [
-        "3,100+ unique visitors",
-        "40+ direct vendor & band submissions through the site",
-        "bounce rate dropped under 30% on mobile",
-        "several private event bookings came directly from the 'Host Your Event' section"
-      ],
-      quote: "People finally understand what The Eatery is. That one page did more than all our posts combined.",
-      quoteBy: "Mario, Owner"
-    }
-  },
-  {
-    name: "Uncle Chops Food Court",
-    description: "Landing page for a local food truck and eatery.",
-    url: "https://unclechops.carrd.co",
-    imageAlt: "Uncle Chops Food Court screenshot",
-    image: "uncles.jpeg",
-    slug: "uncle-chops-food-court",
-    caseStudy: {
-      before: "Uncle Chop's had great food, a loyal customer base, and a cool space—but no real online presence beyond word-of-mouth. Their brand felt scattered, and mobile users had no easy way to find menus, hours, or location.",
-      after: "We built a bold, mobile-friendly landing page that captured their hometown-meets-elevated-dining vibe. Within 30 days of launch:",
-      results: [
-        "website traffic jumped to 2,400+ visits/month",
-        "time-on-site increased by 60%",
-        "“Get Directions” clicks increased by 3.2x",
-        "they started receiving vendor & booking inquiries through the form for the first time"
-      ],
-      quote: "We didn't realize how many people were searching for us online until the site launched. It's been a game-changer.",
-      quoteBy: "Chris, Owner"
-    }
-  },
-  {
     name: "Rarelygroovy",
-    description: "Web app for tracking local music events in the Rio Grande Valley.",
-    url: "https://www.rarelygroovy.com/events",
-    imageAlt: "Rarelygroovy screenshot",
-    image: "rarely.png",
     slug: "rarelygroovy",
-    caseStudy: {
-      before: "Rarelygroovy started as a passion project to document and promote the underground music scene in the Rio Grande Valley. The original site was functional but minimal—no artist directory, no genre filtering, and no mobile experience. Most traffic came from word of mouth or the founder's social circles, and visitors had no way to truly explore the scene.",
-      after: "We designed and launched a full-featured music discovery platform, complete with:",
-      results: [
-        "8,200+ unique users in the first 60 days",
-        "140+ local artists documented in the directory",
-        "2.3x increase in time spent on site",
-        "1 in 4 users who viewed 3+ artists clicked into the paid tier",
-        "3 bands booked gigs directly from being featured on the site"
-      ],
-      quote: "Rarelygroovy made us feel like a real scene again. People are finding bands they've never heard of—right in their own backyard.",
-      quoteBy: "Local Promoter"
-    }
+    url: "https://rarelygroovy.com",
+    image: "rarely.png",
+    imageAlt: "Rarelygroovy screenshot",
+    readTime: "2 minute",
+    type: "Live Events / Entertainment",
+    techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub"],
+    purpose: "To help local music fans discover and track live events and artists in the Rio Grande Valley.",
+    stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control and collaboration. At one point, the platform was also integrated with Stripe to handle both subscriptions and one-time payments, but has since moved to a donation-based monetization model.",
+    problems: "The main challenge was aggregating event data from multiple sources and making it easily searchable. I also had to design a system that could scale as more artists and venues were added to the platform. My thought process was to keep the UI simple and mobile-friendly, but also create filters and sorting capabilities that would allow for extremely unique views on an already niche dataset of events and artists.",
+    screenshot: "rarely.png",
+    github: "https://github.com/usr390/enm-project"
+  },
+  {
+    name: "Rarelygroovy for iOS",
+    slug: "rarelygroovy-ios",
+    url: "https://apps.apple.com/us/app/rarelygroovy/id6743501928",
+    image: "one.png",
+    imageAlt: "Rarelygroovy iOS screenshot",
+    readTime: "2 minute",
+    type: "Mobile / Entertainment",
+    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Express", "MongoDB", "GitHub"],
+    purpose: "To bring the Rarelygroovy experience to iOS users, making it easy to browse and track local music events on the go.",
+    stackExplanation: "Built with Swift and SwiftUI for a native iOS experience, using UIKit for some custom UI elements. The backend is powered by Express and MongoDB, and the project is managed on GitHub.",
+    problems: `The biggest challenge was building an iOS app that faithfully mirrored the features and user experience of the existing web app. Ensuring consistency across two completely different platforms required careful design and technical decisions, so that users could move seamlessly between web and mobile without confusion or friction. My goal was to deliver one unified, seamless experience for all users, regardless of how they accessed Rarelygroovy.\n\nAnother key decision I faced was whether to use a cross-platform technology (allowing code sharing between Android and iOS) or to build each app natively. I chose to develop the iOS app in Swift/SwiftUI, embracing the native approach. With the rapid advancements in AI-assisted development, I felt this was a great opportunity to leverage the strengths and integrations of each platform’s native language. This allowed the app to feel truly at home on iOS, while still maintaining feature parity with the web experience.`,
+    screenshot: "one.png",
+    github: "https://github.com/usr390/rarelygroovy-ios"
+  },
+  {
+    name: "Rarelygroovy for Android",
+    slug: "rarelygroovy-android",
+    url: "#",
+    image: "two.png",
+    imageAlt: "Rarelygroovy Android screenshot",
+    readTime: "1 minute",
+    type: "Mobile / Entertainment",
+    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Express", "MongoDB", "GitHub"],
+    purpose: "To bring the Rarelygroovy experience to Android users, making it easy to browse and track local music events on the go.",
+    stackExplanation: "The Android app is being built with Kotlin and Jetpack Compose for a modern, native experience. The backend is powered by Express and MongoDB, and the project is managed on GitHub.",
+    problems: `The main challenge is ensuring feature and UX parity with the iOS and web apps, while learning and applying the latest Android development best practices. This project is a way to further develop my skills in native Android development and keep up with the evolving mobile landscape.`,
+    screenshot: "two.png",
+    comingSoon: true,
+    github: "https://github.com/usr390/rarelygroovy-ios",
   },
   // Add more projects as needed
 ];
@@ -95,45 +60,63 @@ export default async function PortfolioDetail({ params }: { params: Promise<{ sl
 
   return (
     <div className="max-w-2xl mx-auto py-16 px-4">
-      <h1 className="text-3xl font-bold mb-4">{project.name}</h1>
+      <h1 className="text-3xl font-bold mb-2">{project.name}</h1>
+      <div className="flex items-center gap-4 mb-4 text-gray-500 text-sm">
+        <span>⏱️ {project.readTime} read</span>
+        <span>•</span>
+        <span>{project.type}</span>
+        {project.comingSoon && (
+          <span className="ml-2 bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">Coming Soon</span>
+        )}
+      </div>
+      <div className="flex flex-wrap gap-2 mb-6">
+        {project.techStack.map((tech) => (
+          <span key={tech} className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-medium">
+            {tech}
+          </span>
+        ))}
+      </div>
       <Image
-        src={`/${project.image}`}
+        src={`/${project.screenshot}`}
         alt={project.imageAlt}
         width={800}
         height={400}
-        className="w-full rounded mb-4"
+        className="w-2/3 mx-auto rounded mb-6 object-cover object-top"
       />
-      <p className="mb-4">{project.description}</p>
-      <a
-        href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-emerald-600 hover:underline font-medium"
-      >
-        Visit Site
-      </a>
-      {project.caseStudy && (
-        <div className="bg-gray-50 rounded-lg p-6 mt-8">
-          <h2 className="text-xl font-bold mb-2">Case Study</h2>
-          <div className="mb-4">
-            <span className="font-semibold">Before:</span>
-            <p>{project.caseStudy.before}</p>
-          </div>
-          <div className="mb-4">
-            <span className="font-semibold">After:</span>
-            <p>{project.caseStudy.after}</p>
-            <ul className="list-disc list-inside mt-2 text-emerald-700">
-              {project.caseStudy.results.map((result, i) => (
-                <li key={i}>{result}</li>
-              ))}
-            </ul>
-          </div>
-          <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-700 mb-2">
-            “{project.caseStudy.quote}”
-          </blockquote>
-          <div className="text-right text-sm text-gray-500">— {project.caseStudy.quoteBy}</div>
-        </div>
-      )}
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Purpose &amp; Goal</h2>
+        <p>{project.purpose}</p>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Stack &amp; Explanation</h2>
+        <p>{project.stackExplanation}</p>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Problems &amp; Thought Process</h2>
+        <p>{project.problems}</p>
+      </section>
+      <div className="flex gap-6 items-center">
+        {project.comingSoon ? (
+          <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">Coming Soon</span>
+        ) : (
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-600 hover:underline font-medium"
+          >
+            {project.slug === "rarelygroovy-ios" ? "Download App" : "Visit Site"}
+          </a>
+        )}
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-emerald-600 hover:underline font-medium"
+        >
+          GitHub
+        </a>
+      </div>
     </div>
   );
 } 
