@@ -1,5 +1,7 @@
 'use client';
 
+import { Github, MapPin, Mail, Phone } from "lucide-react";
+
 export default function HeroSection() {
   return (
     <section
@@ -8,18 +10,45 @@ export default function HeroSection() {
     >
       <div className="w-full border-6 border-gray-200 p-4 flex flex-col items-center relative">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-white leading-relaxed text-left w-full px-4 py-4 md:px-16 md:py-10 lg:px-32 lg:py-16">
-          I&apos;m <span className="underline">Eduardo Trevino</span>, a web developer based in Weslaco, Texas. I love building beautiful interfaces, perfomant software, and everything in between!
+          <span className="underline">Eduardo Trevino</span><br />
+          <div className="flex items-center gap-4 mt-2">
+            <a
+              href="https://maps.google.com/?q=Weslaco,TX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white hover:text-emerald-200 transition-colors"
+            >
+              <MapPin className="w-4 h-4" />
+              <span className="text-sm">Weslaco, TX</span>
+            </a>
+            <a
+              href="https://github.com/usr390"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white hover:text-emerald-200 transition-colors"
+            >
+              <Github className="w-4 h-4" />
+              <span className="text-sm">GitHub</span>
+            </a>
+            <a
+              href="mailto:edutrecompute@gmail.com"
+              className="flex items-center gap-2 text-white hover:text-emerald-200 transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              <span className="text-sm">edutrecompute@gmail.com</span>
+            </a>
+            <a
+              href="tel:+19562345678"
+              className="flex items-center gap-2 text-white hover:text-emerald-200 transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              <span className="text-sm">(956) 261-9316</span>
+            </a>
+          </div><br />
+          I am a web developer. I build interfaces, perfomant software, and everything in between!
         </h1>
       </div>
-      <div className="flex flex-col items-center mt-6 mb-6">
-        <span className="text-white font-semibold text-lg">Get in touch</span>
-        <a
-          href="mailto:edutrecompute@gmail.com"
-          className="underline text-white text-base mt-1"
-        >
-          edutrecompute@gmail.com
-        </a>
-      </div>
+
     </section>
   );
 }

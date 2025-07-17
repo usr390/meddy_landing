@@ -1,80 +1,39 @@
 'use client';
 
 import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import { Github, Mail, Phone } from "lucide-react";
 
 export default function ContactSection() {
-  const [state, handleSubmit] = useForm("xeokdawr"); // Replace with your Formspree form key
-
-  if (state.succeeded) {
-    return (
-      <section className="w-full max-w-2xl mx-auto py-16 px-4" id="contact">
-        <h2 className="text-2xl font-bold mb-8 text-center">Contact</h2>
-        <div className="text-center text-emerald-600 font-semibold text-lg">
-          Thank you for reaching out! I&apos;ll get back to you soon.
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="w-full max-w-2xl mx-auto py-16 px-4" id="contact">
       <h2 className="text-2xl font-bold mb-8 text-center">Contact Me</h2>
-      <p className="text-center mb-6">I&apos;d love to hear from you! Feel free to reach out with the form below or email me directly at <a href="mailto:edutrecompute@gmail.com" className="underline text-emerald-700">edutrecompute@gmail.com</a></p>
-      <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 flex flex-col gap-4">
-        <div>
-          <label htmlFor="name" className="block font-medium mb-1">Name</label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            required
-            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400 border-gray-300"
-            autoComplete="name"
-          />
-          <ValidationError prefix="Name" field="name" errors={state.errors} />
-        </div>
-        <div>
-          <label htmlFor="email" className="block font-medium mb-1">Email</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            required
-            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400 border-gray-300"
-            autoComplete="email"
-          />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
-        </div>
-        <div>
-          <label htmlFor="message" className="block font-medium mb-1">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            required
-            className="w-full border rounded px-3 py-2 h-28 resize-vertical focus:outline-none focus:ring-2 focus:ring-emerald-400 border-gray-300"
-          />
-          <ValidationError prefix="Message" field="message" errors={state.errors} />
-        </div>
-        {/* <div>
-          <label htmlFor="socials" className="block font-medium mb-1">
-            Social Media Links <span className="text-gray-400 text-xs">(optional, one per line)</span>
-          </label>
-          <textarea
-            id="socials"
-            name="socials"
-            className="w-full border rounded px-3 py-2 h-20 resize-vertical focus:outline-none focus:ring-2 focus:ring-emerald-400 border-gray-300"
-            placeholder="Paste links to your Facebook, Instagram, etc."
-          />
-        </div> */}
-        <button
-          type="submit"
-          disabled={state.submitting}
-          className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-6 rounded transition-colors"
+      <p className="text-center mb-6">I&apos;d love to hear from you! Feel free to reach out through any of the methods below</p>
+      <div className="flex justify-center items-center gap-12 mb-6">
+        <a
+          href="https://github.com/usr390"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center text-emerald-600 hover:text-emerald-700 transition-colors text-center"
         >
-          Send Message
-        </button>
-      </form>
+          <Github className="w-6 h-6 mb-1" />
+          <span className="text-sm text-center w-20">GitHub</span>
+        </a>
+        <a
+          href="mailto:edutrecompute@gmail.com"
+          className="flex flex-col items-center text-emerald-600 hover:text-emerald-700 transition-colors text-center"
+        >
+          <Mail className="w-6 h-6 mb-1" />
+          <span className="text-sm text-center w-32">edutrecompute@gmail.com</span>
+        </a>
+        <a
+          href="tel:+19562345678"
+          className="flex flex-col items-center text-emerald-600 hover:text-emerald-700 transition-colors text-center"
+        >
+          <Phone className="w-6 h-6 mb-1" />
+          <span className="text-sm text-center w-32 whitespace-nowrap">(956) 261-9316</span>
+        </a>
+      </div>
     </section>
   );
 } 

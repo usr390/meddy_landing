@@ -99,30 +99,28 @@ export default function PortfolioSection() {
                 className="w-full h-48 object-cover object-top rounded mb-4"
               />
               <div className="flex w-full justify-between items-center gap-2 mt-2">
-                <div className="flex gap-4">
-                  {project.comingSoon ? (
-                    <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">Coming Soon</span>
-                  ) : (
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-emerald-600 hover:underline font-medium"
-                    >
-                      {project.slug === "rarelygroovy-ios" ? "Download App" : "Visit Site"}
-                    </a>
-                  )}
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-emerald-600 hover:underline font-medium"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                </div>
+                {project.comingSoon ? (
+                  <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">Coming Soon</span>
+                ) : (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-600 hover:underline font-medium"
+                  >
+                    {project.slug === "rarelygroovy-ios" ? "Download App" : "Visit Site"}
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-600 hover:underline font-medium"
+                  >
+                    GitHub
+                  </a>
+                )}
                 <a
                   href={`/portfolio/${project.slug}`}
                   className="text-emerald-600 hover:text-emerald-600 hover:underline font-medium"

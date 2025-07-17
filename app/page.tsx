@@ -17,7 +17,7 @@ export default function Home() {
       <section className="w-full max-w-3xl mx-auto py-12 px-4" id="about-us">
         <h2 className="text-2xl font-bold mb-4 text-center">About Me</h2>
         <p className="mb-6 text-center text-gray-700">
-          As a web developer, I enjoy briding the gap between engineering and design. My goal is always to build applications that are scalable and effecient under the hood while providing engaging, pixel-perfect user experiences
+          As a web developer, I enjoy bridging the gap between engineering and design. My goal is always to build applications that are scalable and effecient under the hood while providing engaging, pixel-perfect user experiences
         </p>
         <p className="mb-6 text-center text-gray-700">
         <span className="font-bold">When I&apos;m not in front of a computer screen.</span>  I&apos;m probably reading books, jamming on my bass guitar or fiddling with my Magic: The Gathering decks
