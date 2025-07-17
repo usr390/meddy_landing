@@ -47,7 +47,7 @@ const projects = [
     problems: `The main challenge is ensuring feature and UX parity with the iOS and web apps, while learning and applying the latest Android development best practices. This project is a way to further develop my skills in native Android development and keep up with the evolving mobile landscape.`,
     screenshot: "two.png",
     comingSoon: true,
-    github: "https://github.com/usr390/rarelygroovy-ios",
+    github: "https://github.com/usr390/rarelygroovy-android",
   },
   // Add more projects as needed
 ];
