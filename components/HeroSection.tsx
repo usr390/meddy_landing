@@ -45,7 +45,7 @@ export default function HeroSection() {
               <span className="text-sm">(956) 261-9316</span>
             </a>
           </div><br />
-          I am a software developer. Emphasis on web apps with tools like Angular & Express!
+          I am a software developer. Emphasis on web apps with tools like Angular, Express, & SQL!
         </h1>
       </div>
 

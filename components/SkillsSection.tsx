@@ -1,5 +1,6 @@
 import { SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiJavascript, SiTypescript, SiAngular, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiNpm, SiMongodb, SiMysql, SiGithub, SiSwift, SiSelenium, SiSharp } from "react-icons/si";
 import { TbBrandSwift } from "react-icons/tb";
+import { MousePointer } from "lucide-react";
 import { Card } from "./ui/card";
 
 const skills = [
@@ -32,7 +33,12 @@ export default function SkillsSection() {
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
         {skills.map(({ name, icon: Icon }) => (
           <Card key={name} className="flex flex-col items-center p-4">
-            <Icon className="w-12 h-12 mb-2 text-emerald-500" />
+            <Icon
+              className={
+                "w-12 h-12 mb-2 text-emerald-500" +
+                (name === "Cursor" ? " rotate-[30deg]" : "")
+              }
+            />
             <span className="text-center text-sm font-medium mt-1">{name}</span>
           </Card>
         ))}
