@@ -1,6 +1,5 @@
 import { SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiJavascript, SiTypescript, SiAngular, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiNpm, SiMongodb, SiMysql, SiGithub, SiSwift, SiSelenium, SiSharp } from "react-icons/si";
 import { TbBrandSwift } from "react-icons/tb";
-import { MousePointer } from "lucide-react";
 import { Card } from "./ui/card";
 
 const skills = [
