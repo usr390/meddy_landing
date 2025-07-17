@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eduardo Trevino - Web Developer",
-  description: "Web developer based in Weslaco, Texas. I build interfaces, performant software, and everything in between.",
+  title: "Eduardo Trevino - Software Developer",
+  description: "Software developer based in Weslaco, Texas. I build interfaces, performant software, and everything in between.",
 };
 
 export default function RootLayout({

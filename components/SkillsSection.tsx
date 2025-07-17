@@ -1,8 +1,9 @@
-import { SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiJavascript, SiTypescript, SiAngular, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiNpm, SiMongodb, SiMysql, SiGithub, SiSwift, SiSelenium, SiSharp } from "react-icons/si";
+import { SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiJavascript, SiTypescript, SiAngular, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiNpm, SiMongodb, SiMysql, SiGithub, SiSwift, SiSelenium, SiSharp, SiAndroid, SiKotlin } from "react-icons/si";
 import { TbBrandSwift } from "react-icons/tb";
 import { Card } from "./ui/card";
 
 const skills = [
+  // Frontend
   { name: "HTML", icon: SiHtml5 },
   { name: "CSS", icon: SiCss3 },
   { name: "Tailwind", icon: SiTailwindcss },
@@ -12,17 +13,32 @@ const skills = [
   { name: "Angular", icon: SiAngular },
   { name: "React", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
-  { name: "NodeJS", icon: SiNodedotjs },
-  { name: "Express", icon: SiExpress },
-  { name: "npm", icon: SiNpm },
-  { name: "Playwright", icon: SiJavascript }, // Placeholder
-  { name: "Selenium", icon: SiSelenium },
-  { name: "MongoDB", icon: SiMongodb },
-  { name: "SQL", icon: SiMysql }, // MySQL as placeholder
-  { name: "C#", icon: SiSharp },
+
+  // Mobile
+  { name: "Android", icon: SiAndroid },
+  { name: "Kotlin", icon: SiKotlin },
+  { name: "Jetpack Compose", icon: SiAndroid },
   { name: "Swift", icon: SiSwift },
   { name: "SwiftUI", icon: TbBrandSwift },
+
+  // Backend
+  { name: "NodeJS", icon: SiNodedotjs },
+  { name: "Express", icon: SiExpress },
+
+  // Databases
+  { name: "MongoDB", icon: SiMongodb },
+  { name: "SQL", icon: SiMysql },
+
+  // Testing
+  { name: "Playwright", icon: SiJavascript }, // Placeholder
+  { name: "Selenium", icon: SiSelenium },
+
+  // Tools
+  { name: "npm", icon: SiNpm },
   { name: "GitHub", icon: SiGithub },
+
+  // Other
+  { name: "C#", icon: SiSharp },
 ];
 
 export default function SkillsSection() {
