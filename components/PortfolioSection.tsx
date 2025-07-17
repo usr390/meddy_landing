@@ -51,7 +51,7 @@ const projects = [
   },
   {
     name: "Rarelygroovy for Android",
-    description: "Android companion app for Rarelygroovy.com (Work in Progress).",
+    description: "Companion app for Rarelygroovy.com (Work in Progress).",
     slug: "rarelygroovy-android",
     url: "#",
     image: "two.png",
