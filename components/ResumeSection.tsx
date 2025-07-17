@@ -4,7 +4,7 @@ import { FileText, Download } from 'lucide-react';
 const ResumeSection = () => {
   return (
     <section className="w-full max-w-3xl mx-auto py-16 px-4" id="resume">
-      <h2 className="text-3xl font-bold mb-8 text-center">Resume</h2>
+      <h2 className="text-2xl font-bold mb-8 text-center">Resume</h2>
       
       <div className="text-center">
         <p className="text-gray-700 mb-8">

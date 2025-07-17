@@ -28,7 +28,7 @@ const skills = [
 export default function SkillsSection() {
   return (
     <section className="w-full max-w-4xl mx-auto py-16 px-4" id="skills">
-      <h2 className="text-2xl font-bold mb-8 text-center">Skills</h2>
+      <h2 className="text-2xl font-bold mb-8 text-center">What I Work With</h2>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
         {skills.map(({ name, icon: Icon }) => (
           <Card key={name} className="flex flex-col items-center p-4">
