@@ -13,7 +13,7 @@ const projects = [
     type: "Live Events / Entertainment",
     techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub", "Playwright"],
     purpose: "To help local music fans discover and track live events and artists in the Rio Grande Valley.",
-    stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control and collaboration. GitHub Actions for CI/CD. Playwright for automated UI tests.",
+    stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control. GitHub Actions for CI/CD. Playwright for automated UI tests.",
     problems: "The main challenge was aggregating event and artist data from multiple sources and making it easily searchable. I also had to design a system that could scale as more events and artists were added to the platform. My thought process was to keep the UI simple and mobile-friendly, but also create filters and sorting capabilities that would allow for extremely unique views on an already niche dataset of events and artists",
     screenshot: "rarely.png",
     github: "https://github.com/usr390/enm-project"
