@@ -42,8 +42,6 @@ const skills = [
   { name: "GitHub", icon: SiGithub },
   { name: "GitHub Actions", icon: SiGithub },
 
-  // Other
-  { name: "C#", icon: SiSharp },
 ];
 
 export default function SkillsSection() {
