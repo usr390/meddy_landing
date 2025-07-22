@@ -1,6 +1,6 @@
 'use client';
 
-import { Github, MapPin, Mail, Phone } from "lucide-react";
+import { Github, MapPin, Mail } from "lucide-react";
 
 export default function HeroSection() {
   return (
