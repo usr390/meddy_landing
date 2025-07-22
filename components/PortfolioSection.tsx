@@ -30,13 +30,13 @@ const projects = [
   //   techStack: ["Carrd", "Custom Design"]
   // },
   {
-    name: "Rarelygroovy",
-    description: "Web app for tracking local music events in the Rio Grande Valley.",
+    name: "Rarelygroovy.com",
+    description: "My flagship project. Web app for tracking local music events in the Rio Grande Valley.",
     url: "https://rarelygroovy.com",
     imageAlt: "Rarelygroovy screenshot",
     image: "rarely.png",
     slug: "rarelygroovy",
-    techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub"],
+    techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Node.js", "Express", "MongoDB", "GitHub"],
     github: "https://github.com/usr390/enm-project"
   },
   {
@@ -46,8 +46,18 @@ const projects = [
     imageAlt: "Rarelygroovy screenshot",
     image: "one.png",
     slug: "rarelygroovy-ios",
-    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Express", "MongoDB", "GitHub"],
+    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Node.js", "Express", "MongoDB", "GitHub"],
     github: "https://github.com/usr390/rarelygroovy-ios"
+  },
+  {
+    name: "My Contributions to Enterprise Apps as QA",
+    description: "QA case studies showcasing my ability to identify, recommend, and help implement meaningful product improvements",
+    slug: "contributions",
+    url: "https://my-contributions-to-enterprise-soft.vercel.app/",
+    image: "cont.png",
+    imageAlt: "My Contributions to Enterprise Apps as QA screenshot",
+    techStack: ["React", "Next.js", "TypeScript", "GitHub", "Vercel"],
+    github: "https://github.com/usr390/my-contributions-to-enterprise-software"
   },
   {
     name: "Rarelygroovy for Android",
@@ -56,18 +66,16 @@ const projects = [
     url: "#",
     image: "two.png",
     imageAlt: "Rarelygroovy Android screenshot",
-    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Express", "MongoDB", "GitHub"],
+    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Node.js", "Express", "MongoDB", "GitHub"],
     comingSoon: true,
     github: "https://github.com/usr390/rarelygroovy-android"
   },
-  
 ];
 
 export default function PortfolioSection() {
   return (
     <section className="w-full max-w-5xl mx-auto py-16 px-4" id="portfolio">
       <h2 className="text-2xl font-bold mb-8 text-center">Portfolio</h2>
-      <p className="text-center mb-6">I currently build and maintain two projects which I can consider my &quot;flagship&quot; projects, and another project that is coming soon</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {projects.map((project, idx) => (
           <Card

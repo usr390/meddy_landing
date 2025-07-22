@@ -49,6 +49,21 @@ const projects = [
     comingSoon: true,
     github: "https://github.com/usr390/rarelygroovy-android",
   },
+  {
+    name: "My Contributions to Enterprise Apps as QA",
+    slug: "contributions",
+    url: "https://my-contributions-to-enterprise-soft.vercel.app/",
+    image: "two.png",
+    imageAlt: "My Contributions to Enterprise Apps as QA screenshot",
+    readTime: "2 minute",
+    type: "Case Studies / Demos",
+    techStack: ["React", "Next.js", "TypeScript", "GitHub", "Vercel"],
+    purpose: "To highlight how I approached quality assurance, usability, accessibility, and performance improvements in real enterprise software projects using anonymized case studies to demonstrate practical impact and decision-making.",
+    stackExplanation: "Built with React and Next.js for fast, interactive demos; written in TypeScript for type safety; deployed on Vercel for quick sharing. The project is structured as a portfolio of UX/QA interventions, designed to show both technical understanding and user-centered thinking.",
+    problems: `The challenge was representing complex, real-world product improvements without revealing proprietary client details. I focused on abstracting the core problems and solutions into clear before/after stories, using mockups and descriptions to show how small UI, accessibility, or performance changes can create outsized impact. My goal was to communicate not just what I did, but how I think as a QA/software professional. Showing an eye for detail, scalability, and user experience.`,
+    screenshot: "cont.png",
+    github: "https://github.com/usr390/my-contributions-to-enterprise-software",
+  },
   // Add more projects as needed
 ];
 
