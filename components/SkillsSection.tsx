@@ -36,6 +36,7 @@ const skills = [
   // Tools
   { name: "npm", icon: SiNpm },
   { name: "GitHub", icon: SiGithub },
+  { name: "GitHub Actions", icon: SiGithub },
 
   // Other
   { name: "C#", icon: SiSharp },
