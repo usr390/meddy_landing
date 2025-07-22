@@ -26,7 +26,7 @@ const projects = [
     imageAlt: "Rarelygroovy iOS screenshot",
     readTime: "2 minute",
     type: "Mobile / Entertainment",
-    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Express", "MongoDB", "GitHub"],
+    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Express", "MongoDB", "GitHub", "GitHub Actions", "Playwright"],
     purpose: "To bring the Rarelygroovy experience to iOS users, making it easy to browse and track local music events on the go.",
     stackExplanation: "Built with Swift and SwiftUI for a native iOS experience, using UIKit for some custom UI elements. The backend is powered by Express and MongoDB, and the project is managed on GitHub.",
     problems: `The biggest challenge was building an iOS app that faithfully mirrored the features and user experience of the existing web app. Ensuring consistency across two completely different platforms required careful design and technical decisions, so that users could move seamlessly between web and mobile without confusion or friction. My goal was to deliver one unified, seamless experience for all users, regardless of how they accessed Rarelygroovy.\n\nAnother key decision I faced was whether to use a cross-platform technology (allowing code sharing between Android and iOS) or to build each app natively. I chose to develop the iOS app in Swift/SwiftUI, embracing the native approach. With the rapid advancements in AI-assisted development, I felt this was a great opportunity to leverage the strengths and integrations of each platform’s native language. This allowed the app to feel truly at home on iOS, while still maintaining feature parity with the web experience.`,
