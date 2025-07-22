@@ -46,7 +46,7 @@ const projects = [
     imageAlt: "Rarelygroovy screenshot",
     image: "one.png",
     slug: "rarelygroovy-ios",
-    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Node.js", "Express", "MongoDB", "GitHub"],
+    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Node.js", "Express", "MongoDB", "GitHub", "Appium"],
     github: "https://github.com/usr390/rarelygroovy-ios"
   },
   {
