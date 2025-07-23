@@ -3,6 +3,18 @@ import { TbBrandSwift } from "react-icons/tb";
 import { Card } from "./ui/card";
 
 const skills = [
+  // Testing
+  { name: "Playwright", icon: SiJavascript }, // Placeholder
+  { name: "Selenium", icon: SiSelenium },
+  { name: "Appium", icon: SiAppium },
+  { name: "Postman", icon: SiPostman },
+  { name: "Swagger", icon: SiSwagger },
+
+  // Tools
+  { name: "npm", icon: SiNpm },
+  { name: "GitHub", icon: SiGithub },
+  { name: "GitHub Actions", icon: SiGithub },
+
   // Frontend
   { name: "HTML", icon: SiHtml5 },
   { name: "CSS", icon: SiCss3 },
@@ -27,20 +39,6 @@ const skills = [
   // Databases
   { name: "MongoDB", icon: SiMongodb },
   { name: "SQL", icon: SiMysql },
-
-  // Testing
-  { name: "Playwright", icon: SiJavascript }, // Placeholder
-  { name: "Selenium", icon: SiSelenium },
-  { name: "Appium", icon: SiAppium },
-  { name: "Postman", icon: SiPostman },
-  { name: "Swagger", icon: SiSwagger },
-
-
-  // Tools
-  { name: "npm", icon: SiNpm },
-  { name: "GitHub", icon: SiGithub },
-  { name: "GitHub Actions", icon: SiGithub },
-
 ];
 
 export default function SkillsSection() {
