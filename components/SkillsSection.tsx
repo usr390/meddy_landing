@@ -15,7 +15,6 @@ const skills = [
   { name: "Next.js", icon: SiNextdotjs },
 
   // Mobile
-  { name: "Android", icon: SiAndroid },
   { name: "Kotlin", icon: SiKotlin },
   { name: "Jetpack Compose", icon: SiAndroid },
   { name: "Swift", icon: SiSwift },
