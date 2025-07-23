@@ -41,7 +41,7 @@ const projects = [
     imageAlt: "Rarelygroovy Android screenshot",
     readTime: "1 minute",
     type: "Mobile / Entertainment",
-    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Express", "MongoDB", "GitHub"],
+    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Express", "MongoDB", "GitHub", "Appium"],
     purpose: "To bring the Rarelygroovy experience to Android users, making it easy to browse and track local music events on the go.",
     stackExplanation: "The Android app is being built with Kotlin and Jetpack Compose for a modern, native experience. The backend is powered by Express and MongoDB, and the project is managed on GitHub.",
     problems: `The main challenge is ensuring feature and UX parity with the iOS and web apps, while learning and applying the latest Android development best practices. This project is a way to further develop my skills in native Android development and keep up with the evolving mobile landscape.`,

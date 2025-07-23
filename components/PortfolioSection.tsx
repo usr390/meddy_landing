@@ -66,7 +66,7 @@ const projects = [
     url: "#",
     image: "two.png",
     imageAlt: "Rarelygroovy Android screenshot",
-    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Node.js", "Express", "MongoDB", "GitHub"],
+    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Node.js", "Express", "MongoDB", "GitHub", "Appium"],
     comingSoon: true,
     github: "https://github.com/usr390/rarelygroovy-android"
   },
