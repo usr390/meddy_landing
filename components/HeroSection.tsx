@@ -38,7 +38,7 @@ export default function HeroSection() {
               <span className="text-sm">edutrecompute@gmail.com</span>
             </a>
           </div><br />
-          I am a developer and QA software analyst with emphasis on web/mobile apps using tools like Angular, React, XCode, Android Studio, Express, & SQL!
+          A developer and QA software analyst. Emphasis on web/mobile apps using tools like Angular, React, XCode, Android Studio, Express, SQL, and Playwright!
         </h1>
       </div>
 
