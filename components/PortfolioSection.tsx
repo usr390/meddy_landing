@@ -46,7 +46,7 @@ const projects = [
     imageAlt: "Rarelygroovy screenshot",
     image: "one.png",
     slug: "rarelygroovy-ios",
-    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Node.js", "Express", "MongoDB", "GitHub", "Appium"],
+    techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Node.js", "Express", "MongoDB", "GitHub", "Appium + XCUITest"],
     github: "https://github.com/usr390/rarelygroovy-ios"
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     url: "#",
     image: "two.png",
     imageAlt: "Rarelygroovy Android screenshot",
-    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Node.js", "Express", "MongoDB", "GitHub", "Appium"],
+    techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Node.js", "Express", "MongoDB", "GitHub", "Appium + UiAutomator2"],
     comingSoon: true,
     github: "https://github.com/usr390/rarelygroovy-android"
   },
