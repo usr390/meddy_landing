@@ -31,7 +31,7 @@ const projects = [
   // },
   {
     name: "Rarelygroovy.com",
-    description: "My flagship project. Web app for tracking local music events in the Rio Grande Valley.",
+    description: "My flagship project. Web app for tracking local music events in the Rio Grande Valley, TX.",
     url: "https://rarelygroovy.com",
     imageAlt: "Rarelygroovy screenshot",
     image: "rarely.png",
