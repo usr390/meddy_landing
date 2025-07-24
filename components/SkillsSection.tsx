@@ -108,6 +108,11 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="w-full max-w-4xl mx-auto py-16 px-4">
       <h2 className="text-2xl font-bold mb-8 text-center">What I Work With</h2>
+      <p className="mb-6 text-center text-gray-700">
+          I generally consider myself to be tool agnostic (I am always open to trying new technologies), however these days I find myself working with:
+      </p>
+
+
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
         {skills.map((skill) => (
           <div

@@ -8,7 +8,7 @@ export default function HeroSection() {
       id="hero"
       className="w-full flex flex-col justify-center items-center px-2 py-16 bg-gradient-to-r from-emerald-600 to-blue-600 min-h-[70vh] md:h-screen"
     >
-      <div className="w-full border-6 border-gray-200 p-4 flex flex-col items-center relative">
+      <div className="w-full  p-4 flex flex-col items-center relative">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-white leading-relaxed text-left w-full px-4 py-4 md:px-16 md:py-10 lg:px-32 lg:py-16">
           <span className="underline">Eduardo Trevino</span><br />
           <div className="flex flex-wrap gap-4 mt-2 w-full sm:flex-row flex-col items-start sm:items-center">
