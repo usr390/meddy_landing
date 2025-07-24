@@ -16,15 +16,15 @@ const skills = [
   { name: "GitHub Actions", icon: SiGithub },
 
   // Frontend
-  { name: "HTML", icon: SiHtml5 },
-  { name: "CSS", icon: SiCss3 },
-  { name: "Tailwind", icon: SiTailwindcss },
-  { name: "Bootstrap", icon: SiBootstrap },
-  { name: "JavaScript", icon: SiJavascript },
-  { name: "TypeScript", icon: SiTypescript },
   { name: "Angular", icon: SiAngular },
   { name: "React", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "Tailwind", icon: SiTailwindcss },
+  { name: "Bootstrap", icon: SiBootstrap },
+  { name: "HTML", icon: SiHtml5 },
+  { name: "CSS", icon: SiCss3 },
 
   // Mobile
   { name: "Kotlin", icon: SiKotlin },
