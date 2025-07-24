@@ -12,7 +12,6 @@ const skills = [
   { name: "Swagger", icon: SiSwagger },
 
   // Tools
-  { name: "npm", icon: SiNpm },
   { name: "GitHub", icon: SiGithub },
   { name: "GitHub Actions", icon: SiGithub },
 
