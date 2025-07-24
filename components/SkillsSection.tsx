@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiJavascript, SiTypescript, SiAngular, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiNpm, SiMongodb, SiMysql, SiGithub, SiSwift, SiSelenium, SiAndroid, SiKotlin, SiAppium, SiPostman, SiSwagger } from "react-icons/si";
+import { SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiJavascript, SiTypescript, SiAngular, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiNpm, SiMongodb, SiMysql, SiGithub, SiSwift, SiSelenium, SiAndroid, SiKotlin, SiAppium, SiPostman, SiSwagger, SiPercy } from "react-icons/si";
 import { TbBrandSwift } from "react-icons/tb";
 import { Card } from "./ui/card";
 
@@ -7,6 +7,7 @@ const skills = [
   { name: "Playwright", icon: SiJavascript }, // Placeholder
   { name: "Selenium", icon: SiSelenium },
   { name: "Appium", icon: SiAppium },
+  { name: "Percy", icon: SiPercy },
   { name: "Postman", icon: SiPostman },
   { name: "Swagger", icon: SiSwagger },
 

@@ -36,7 +36,7 @@ const projects = [
     imageAlt: "Rarelygroovy screenshot",
     image: "rarely.png",
     slug: "rarelygroovy",
-    techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Node.js", "Express", "MongoDB", "GitHub", "GitHub Actions", "Playwright"],
+    techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Node.js", "Express", "MongoDB", "GitHub", "GitHub Actions", "Playwright", "Percy"],
     github: "https://github.com/usr390/enm-project"
   },
   {
