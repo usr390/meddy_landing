@@ -50,11 +50,11 @@ const projects = [
     github: "https://github.com/usr390/rarelygroovy-android",
   },
   {
-    name: "My Contributions to Enterprise Apps as QA",
+    name: "My Contributions as QA",
     slug: "contributions",
     url: "https://my-contributions-to-enterprise-soft.vercel.app/",
     image: "two.png",
-    imageAlt: "My Contributions to Enterprise Apps as QA screenshot",
+    imageAlt: "My Contributions as QA screenshot",
     readTime: "2 minute",
     type: "Case Studies / Demos",
     techStack: ["React", "Next.js", "TypeScript", "GitHub", "Vercel"],
