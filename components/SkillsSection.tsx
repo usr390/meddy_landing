@@ -7,6 +7,8 @@ import { TbBrandSwift } from "react-icons/tb";
 import { Card } from "@/components/ui/card";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { MdAccessibility } from "react-icons/md"; // Material Design icon
+
 
 
 const skills = [
@@ -46,6 +48,12 @@ const skills = [
     icon: SiSwagger,
     description: "OpenAPI tooling for API design, docs, and mocks.",
     url: "https://swagger.io",
+  },
+  {
+    name: "NVDA (& similar)",
+    icon: MdAccessibility,
+    description: "Free, open-source screen reader for Windows used in accessibility testing.",
+    url: "https://www.nvaccess.org",
   },
   // Tools
   {

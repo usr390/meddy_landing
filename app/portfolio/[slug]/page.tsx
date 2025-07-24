@@ -10,10 +10,10 @@ const projects = [
     image: "rarely.png",
     imageAlt: "Rarelygroovy screenshot",
     readTime: "2 minute",
-    type: "Live Events / Entertainment",
+    type: "Live Events / Entertainmen / Web",
     techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub", "Playwright", "Percy"],
     purpose: "To help local music fans discover and track live events and artists in the Rio Grande Valley, TX.",
-    stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control. GitHub Actions for CI/CD. Playwright for automated UI tests. Percy (integrated with Playwright) is used for automated visual regression testing.",
+    stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control. GitHub Actions for CI/CD. Playwright for automated browser UI tests. Percy (integrated with Playwright) is used for automated visual regression testing.",
     problems: "The main challenge was aggregating event and artist data from multiple sources and making it easily searchable. I also had to design a system that could scale as more events and artists were added to the platform. My thought process was to keep the UI simple and mobile-friendly, but also create filters and sorting capabilities that would allow for extremely unique views on an already niche dataset of events and artists. The goal being a digital experience not found anywhere else!",
     screenshot: "rarely.png",
     github: "https://github.com/usr390/enm-project"
@@ -67,7 +67,31 @@ const projects = [
   // Add more projects as needed
 ];
 
-export default async function PortfolioDetail({ params }: { params: Promise<{ slug: string }> }) {
+function ProjectPurpose({ slug, purpose }: { slug: string; purpose: string }) {
+  if (slug === "rarelygroovy") {
+    return (
+      <p>
+        To help local music fans discover and track live events and artists in the{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/Lower_Rio_Grande_Valley"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-emerald-600 hover:underline"
+        >
+          Rio Grande Valley, TX
+        </a>.
+      </p>
+    );
+  }
+
+  return <p>{purpose}</p>;
+}
+
+export default async function PortfolioDetail({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
 
@@ -81,16 +105,23 @@ export default async function PortfolioDetail({ params }: { params: Promise<{ sl
         <span>•</span>
         <span>{project.type}</span>
         {project.comingSoon && (
-          <span className="ml-2 bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">Coming Soon</span>
+          <span className="ml-2 bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">
+            Coming Soon
+          </span>
         )}
       </div>
+
       <div className="flex flex-wrap gap-2 mb-6">
         {project.techStack.map((tech) => (
-          <span key={tech} className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-medium">
+          <span
+            key={tech}
+            className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-medium"
+          >
             {tech}
           </span>
         ))}
       </div>
+
       <Image
         src={`/${project.screenshot}`}
         alt={project.imageAlt}
@@ -98,21 +129,27 @@ export default async function PortfolioDetail({ params }: { params: Promise<{ sl
         height={400}
         className="w-2/3 mx-auto rounded mb-6 object-cover object-top"
       />
+
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Purpose &amp; Goal</h2>
-        <p>{project.purpose}</p>
+        <ProjectPurpose slug={project.slug} purpose={project.purpose} />
       </section>
+
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Stack &amp; Explanation</h2>
         <p>{project.stackExplanation}</p>
       </section>
+
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Problems &amp; Thought Process</h2>
         <p>{project.problems}</p>
       </section>
+
       <div className="flex gap-6 items-center">
         {project.comingSoon ? (
-          <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">Coming Soon</span>
+          <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">
+            Coming Soon
+          </span>
         ) : (
           <a
             href={project.url}
@@ -134,4 +171,4 @@ export default async function PortfolioDetail({ params }: { params: Promise<{ sl
       </div>
     </div>
   );
-} 
+}
