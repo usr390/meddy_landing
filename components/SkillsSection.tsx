@@ -109,7 +109,7 @@ export default function SkillsSection() {
     <section id="skills" className="w-full max-w-4xl mx-auto py-16 px-4">
       <h2 className="text-2xl font-bold mb-8 text-center">What I Work With</h2>
       <p className="mb-6 text-center text-gray-700">
-          I generally consider myself to be tool agnostic (I am always open to trying new technologies), however these days I find myself working with:
+          I generally consider myself to be tool agnostic and always open to trying new technologies, however these days I find myself working with:
       </p>
 
 
