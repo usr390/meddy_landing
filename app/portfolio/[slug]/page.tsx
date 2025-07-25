@@ -10,7 +10,7 @@ const projects = [
     image: "rarely.png",
     imageAlt: "Rarelygroovy screenshot",
     readTime: "2 minute",
-    type: "Live Events / Entertainmen / Web",
+    type: "Live Events / Entertainment / Web",
     techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub", "Playwright", "Percy"],
     purpose: "To help local music fans discover and track live events and artists in the Rio Grande Valley, TX.",
     stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control. GitHub Actions for CI/CD. Playwright for automated browser UI tests. Percy (integrated with Playwright) is used for automated visual regression testing.",
