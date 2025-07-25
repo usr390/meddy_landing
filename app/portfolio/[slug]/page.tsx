@@ -12,7 +12,7 @@ const projects = [
     readTime: "2 minute",
     type: "Live Events / Entertainment / Web",
     techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub", "Playwright", "Percy"],
-    purpose: "To help local music fans discover and track live events and artists in the Rio Grande Valley, TX.",
+    purpose: "To help local music fans discover live events and artists in the Rio Grande Valley, TX.",
     stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control. GitHub Actions for CI/CD. Playwright for automated browser UI tests. Percy (integrated with Playwright) is used for automated visual regression testing.",
     problems: "The main challenge was aggregating event and artist data from multiple sources and making it easily searchable. I also had to design a system that could scale as more events and artists were added to the platform. My thought process was to keep the UI simple and mobile-friendly, but also create filters and sorting capabilities that would allow for extremely unique views on an already niche dataset of events and artists. The goal being a digital experience not found anywhere else!",
     screenshot: "rarely.png",
@@ -27,7 +27,7 @@ const projects = [
     readTime: "2 minute",
     type: "Live Events / Entertainment / Mobile",
     techStack: ["XCode", "SwiftUI", "Swift", "UIKit", "Express", "MongoDB", "GitHub", "GitHub Actions", "Appium + XCUITest"],
-    purpose: "To bring the Rarelygroovy experience to iOS users, making it easy to browse and track local music events on the go.",
+    purpose: "To bring the Rarelygroovy experience to iOS users, making it easy to browse local music events on the go.",
     stackExplanation: "Built with Swift and SwiftUI for a native iOS experience, using UIKit for some custom UI elements. The backend is powered by Express and MongoDB. UI integration tests are done using Appium + XCUITest driver. GitHub is used for verison control.",
     problems: `The biggest challenge was building an iOS app that faithfully mirrored the features and user experience of the existing web app. Ensuring consistency across two completely different platforms required careful design and technical decisions, so that users could move seamlessly between web and mobile without confusion or friction. My goal was to deliver one unified, seamless experience for all users, regardless of how they accessed Rarelygroovy.\n\nAnother key decision I faced was whether to use a cross-platform technology (allowing code sharing between Android and iOS) or to build each app natively. I chose to develop the iOS app in Swift/SwiftUI, embracing the native approach. With the rapid advancements in AI-assisted development, I felt this was a great opportunity to rapidy upskill and leverage the strengths and integrations of each platform’s native language. This allowed the app to feel truly at home on iOS, while still maintaining feature parity with the web experience.`,
     screenshot: "one.png",
@@ -42,7 +42,7 @@ const projects = [
     readTime: "1 minute",
     type: "Live Events / Entertainment / Mobile",
     techStack: ["Android Studio", "Kotlin", "Jetpack Compose", "Express", "MongoDB", "GitHub", "Appium + UiAutomator2"],
-    purpose: "To bring the Rarelygroovy experience to Android users, making it easy to browse and track local music events on the go.",
+    purpose: "To bring the Rarelygroovy experience to Android users, making it easy to browse local music events on the go.",
     stackExplanation: "The Android app is being built with Kotlin and Jetpack Compose for a modern, native experience. The backend is powered by Express and MongoDB. UI integration tests ran with Appium + UiAutomator2 driver. GitHub for version control.",
     problems: `The main challenge is ensuring feature and UX parity with the iOS and web apps, while learning and applying the latest Android development best practices. This project is a way to further develop my skills in native Android development and keep up with the evolving mobile landscape.`,
     screenshot: "two.png",
@@ -71,7 +71,7 @@ function ProjectPurpose({ slug, purpose }: { slug: string; purpose: string }) {
   if (slug === "rarelygroovy") {
     return (
       <p>
-        To help local music fans discover and track live events and artists in the{" "}
+        To help local music fans discover live events and artists in the{" "}
         <a
           href="https://en.wikipedia.org/wiki/Lower_Rio_Grande_Valley"
           target="_blank"
