@@ -11,9 +11,9 @@ const projects = [
     imageAlt: "Rarelygroovy screenshot",
     readTime: "2 minute",
     type: "Live Events / Entertainment / Web",
-    techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub", "Playwright", "Percy"],
+    techStack: ["Angular", "PrimeNG", "RxJs", "NgRx", "TypeScript", "Express", "MongoDB", "GitHub", "Playwright", "Percy", "Postman Newman"],
     purpose: "To help local music fans discover live events and artists in the Rio Grande Valley, TX.",
-    stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control. GitHub Actions for CI/CD. Playwright for automated browser UI tests. Percy (integrated with Playwright) is used for automated visual regression testing.",
+    stackExplanation: "The app uses Angular for a fast, interactive UI, PrimeNG for component styling, RxJs and NgRx for state management, and Express/MongoDB for the backend API. GitHub is used for version control. GitHub Actions for CI/CD. Playwright for automated browser UI tests. Postman Newman is used for automated API testing. Percy (integrated with Playwright) is used for automated visual regression testing.",
     problems: "The main challenge was aggregating event and artist data from multiple sources and making it easily searchable. I also had to design a system that could scale as more events and artists were added to the platform. My thought process was to keep the UI simple and mobile-friendly, but also create filters and sorting capabilities that would allow for extremely unique views on an already niche dataset of events and artists. The goal being a digital experience not found anywhere else!",
     screenshot: "rarely.png",
     github: "https://github.com/usr390/enm-project"
