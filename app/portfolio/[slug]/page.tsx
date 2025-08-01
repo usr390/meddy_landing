@@ -106,7 +106,7 @@ export default async function PortfolioDetail({
         <span>{project.type}</span>
         {project.comingSoon && (
           <span className="ml-2 bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">
-            Coming Soon
+            Work In Progress
           </span>
         )}
       </div>
@@ -148,7 +148,7 @@ export default async function PortfolioDetail({
       <div className="flex gap-6 items-center">
         {project.comingSoon ? (
           <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">
-            Coming Soon
+            Work In Progress
           </span>
         ) : (
           <a

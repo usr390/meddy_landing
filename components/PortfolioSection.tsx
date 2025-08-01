@@ -61,7 +61,7 @@ const projects = [
   },
   {
     name: "Rarelygroovy for Android",
-    description: "Companion app for Rarelygroovy.com (Work in Progress).",
+    description: "Companion app for Rarelygroovy.com",
     slug: "rarelygroovy-android",
     url: "#",
     image: "two.png",
@@ -87,7 +87,7 @@ export default function PortfolioSection() {
               <CardTitle>{project.name}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
               {project.comingSoon && (
-                <span className="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold mt-2">Coming Soon</span>
+                <span className="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold mt-2">Work In Progress</span>
               )}
               <div className="flex flex-wrap gap-2 mt-2">
                 {project.techStack.map((tech) => (
@@ -108,7 +108,7 @@ export default function PortfolioSection() {
               />
               <div className="flex w-full justify-between items-center gap-2 mt-2">
                 {project.comingSoon ? (
-                  <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">Coming Soon</span>
+                  <span className="inline-block bg-gray-200 text-gray-500 px-4 py-2 rounded font-semibold cursor-not-allowed opacity-70">Work In Progress</span>
                 ) : (
                   <a
                     href={project.url}
