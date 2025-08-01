@@ -31,7 +31,7 @@ const projects = [
   // },
   {
     name: "Rarelygroovy.com",
-    description: "My flagship project. Web app for tracking local music events in the Rio Grande Valley, TX.",
+    description: "My flagship project. Web app for tracking local music events in the Rio Grande Valley, TX",
     url: "https://rarelygroovy.com",
     imageAlt: "Rarelygroovy screenshot",
     image: "rarely.png",
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     name: "Rarelygroovy for iOS",
-    description: "Companion app for Rarelygroovy.com.",
+    description: "Companion app for Rarelygroovy.com",
     url: "https://apps.apple.com/us/app/rarelygroovy/id6743501928",
     imageAlt: "Rarelygroovy screenshot",
     image: "one.png",
