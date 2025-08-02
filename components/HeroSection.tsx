@@ -38,7 +38,7 @@ export default function HeroSection() {
               <span className="text-sm">edutrecompute@gmail.com</span>
             </a>
           </div><br />
-          QA software analyst and developer. Emphasis on web and mobile using tools like TypeScript/JavaScript, Playwright, Appium, Postman, SQL, and GitHub Actions!
+          QA software analyst with emphasis on test automation. I work on web and mobile using tools like TypeScript/JavaScript, Playwright, Appium, Postman, SQL, and GitHub Actions!
         </h1>
       </div>
 
