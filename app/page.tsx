@@ -57,38 +57,7 @@ export default function Home() {
           </div>
           <div className="rounded-lg border p-6 flex flex-col items-center text-center h-full">
             <Laptop className="text-emerald-500 w-10 h-10 mb-2" />
-            <h3 className="font-semibold mb-1 text-lg sm:text-xl">Desktop Apps</h3>
-            <p className="text-gray-700">Native apps for Mac and Windows.</p>
-          </div>
-          <div className="rounded-lg border p-6 flex flex-col items-center text-center h-full col-span-full sm:col-span-2 lg:col-span-2 mx-auto">
-            <Lightbulb className="text-emerald-500 w-10 h-10 mb-2" />
-            <h3 className="font-semibold mb-1 text-lg sm:text-xl">Other Software</h3>
-            <p className="text-gray-700">General software, automation, and custom tools.</p>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <WhyChooseSection /> */}
-
-      {/* <section className="w-full max-w-3xl mx-auto py-12 px-4" id="pricing">
-        <h2 className="text-2xl font-bold mb-4 text-center">Pricing</h2>
-        <div className="bg-white rounded-lg shadow p-6 flex flex-col gap-6">
-          <div className="text-center">
-            <h3 className="text-xl font-semibold mb-2">Landing Page</h3>
-            <p className="text-emerald-600 text-3xl font-bold mb-1">
-              $100 <span className="text-lg font-normal">one-time</span> <span className="mx-2">|</span> <span className="text-emerald-600 text-2xl font-bold">$5</span><span className="text-lg font-normal">/month</span>
-            </p>
-            <p className="text-gray-700 mb-2">A beautiful, custom landing page tailored to your business.</p>
-            <p className="text-gray-500 text-sm">
-              <span className="font-medium">$5/month</span> (required) — covers domain costs, ongoing updates, backups, and support.
-            </p>
-          </div>
-          <div className="border-t pt-6 text-center">
-            <h3 className="text-xl font-semibold mb-2">Custom Projects</h3>
-            <p className="text-gray-700 mb-2">
-              Need something more? We build web apps, portfolios, and custom solutions for all kinds of businesses. Pricing varies based on scope and requirements.
-            </p>
-            <p className="text-gray-500 text-sm">Contact us for a free, personalized quote!</p>
+   wlassName="text-gray-500 text-sm">Contact us for a free, personalized quote!</p>
           </div>
         </div>
       </section> */}
